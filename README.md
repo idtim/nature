@@ -38,7 +38,7 @@
 
 ![MCD](/assets/03_blog_write.png)<br>
 
-## Easter egg
+## Easter Egg
 > Espace caché du site. Par exemple la commande "run hangman" sur la capture ci-dessous, permet de lancer le jeu du pendu.
 
 ![MCD](/assets/04_terminal.png)<br>
