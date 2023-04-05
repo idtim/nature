@@ -1,0 +1,13 @@
+#connectionPage, #connectionForm  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#connectionForm>button {
+    margin: var(--margin1);
+}
+
+#connectionForm>div>input {
+    margin: var(--margin2);
+}

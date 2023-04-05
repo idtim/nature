@@ -1,0 +1,106 @@
+/* style pour le template du site */
+
+:root {
+    --margin1: 1em;
+    --margin2: 0.5em; 
+    --radius: 10px;
+    --sizeThumbnail: 200px;
+    --sizeFont: 1em;
+    
+    /*Background gradient*/
+    --colorBg1:#000000;
+    --colorBg2:#2b4256;
+    --colorBgCard1: #3a6171;
+    --colorBgCard2: #1f2425;
+    --colorBgCard3: #a04d15;
+    --colorBgCard4: #1f2425;
+    --colorBgThumbnail: rgb(0, 0, 0);
+    
+    --colorFont: rgb(255, 255, 255);
+    --colorHover: orange;
+    --colorBorder0: rgb(88, 103, 109, 0);
+    --colorBorder1: rgb(88, 103, 109, 1);
+
+    --timeTransition1: 0.5s;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin1);
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link { 
+    color: var(--colorFont); 
+}
+
+a:visited {
+    color: var(--colorFont); 
+}
+
+a:hover {
+    transition: color var(--timeTransition1);
+    color: var(--colorHover); 
+}
+
+a:active {
+    color: var(--colorFont); 
+}
+
+a:focus, button:focus {
+    outline: none;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--sizeFont);
+    color: var(--colorFont);
+    background:none;
+    border-radius: var(--radius); 
+    border: 1px solid var(--colorFont);
+    height: 2.5em;
+    width: 7em;
+    padding: 0px 1px 4px 1px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--sizeFont);
+    color: var(--colorFont);
+    background: -webkit-radial-gradient(center, var(--colorBg1), var(--colorBg2));
+    background-repeat: repeat;
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--sizeFont);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+    header {
+        flex-direction: row;
+    }
+
+    footer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

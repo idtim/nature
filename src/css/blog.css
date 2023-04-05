@@ -1,0 +1,40 @@
+#blogPage, #blogPageRead, #blogPageCreate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blogFormCreate {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#blogFormCreate>button {
+    display: inline-block;
+    width: max-content;
+    margin: auto;
+    margin-top: var(--margin2);
+}
+
+#blogFormCreate>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#blogFormCreate>div>label {
+    display: inline-block;
+    min-width: 150px;
+    margin: var(--margin2);
+}
+
+#blogFormCreate>div>input, textarea {
+    flex: 1 auto;
+    margin: var(--margin2);
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--sizeFont);
+} 
+
+#blogFormCreate>button {
+    padding: 0 var(--margin2) 0 var(--margin2);
+}

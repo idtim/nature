@@ -1,0 +1,10 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ignore ALL .log files
+#*.log
+
+# ignore ALL files in ANY directory named temp
+#temp/
+
+_old/
+_wrk/
